@@ -1,0 +1,103 @@
+.container{
+    display: grid;
+    grid-template-columns: 77px 77px 77px 77px;
+    grid-template-rows: 77px 77px 77px 77px 77px 77px 77px;
+    background-color: black;
+    grid-template-areas:
+    
+    "blind blind lineup lineup"
+    "blind blind linedown linedown"
+    "ac pl_mi mod div"
+    "seven eight nine mult"
+    "four five six min"
+    "one two three plus"
+    "zero zero dot equal";
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+    gap: 10px 15px;
+    padding: 60px 20px 25px 20px;
+    border-radius: 30px;
+}
+
+.div_in{
+    background-color: rgba(250, 250, 250, 0.616);
+    color: white;
+    border: none;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;    
+}
+.div_in:hover{
+    opacity: 0.5;
+}
+.blind, .lineup, .linedown{
+    display: grid;
+    background-color: black;
+    border: none;
+}
+.blind:hover, .lineup:hover, .linedown:hover{
+    opacity: 1;
+}
+
+.blind{
+    grid-area: blind;
+}
+
+.lineup{
+    grid-area: lineup;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* padding-right: 15px;*/
+    margin-bottom: 30px;     
+    margin-top: -20px;
+    font-size: 26px;
+    color: #505050;
+    
+    
+}
+.linedown{
+    grid-area: linedown;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    font-size: 52px;
+    /* margin-bottom: 30px;  */
+    
+}
+
+.ac{
+    grid-area: ac;
+    
+}
+.zero{
+    grid-area: zero;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+
+.number{
+    background-color: #505050
+}
+
+.operand{
+    background-color: #FF9500
+}
+.equal{
+    background-color: #FF9500
+    
+}
+
+.ac, .plusmin, .mod{
+    color: black;
+    font-weight: 500;
+    font-size: 34px;
+    background-color: rgba(250, 250, 250, 0.616);
+}
